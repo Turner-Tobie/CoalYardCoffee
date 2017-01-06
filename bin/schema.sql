@@ -4,7 +4,7 @@ USE coalyard;
 CREATE TABLE IF NOT EXISTS coalyard.beverages(
   	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   	name VARCHAR(45) NOT NULL,
-  	description VARCHAR(45) NOT NULL,
+  	description VARCHAR(200) NOT NULL,
   	beverage_type VARCHAR(15) NOT NULL,
   	price INT NOT NULL,
   	PRIMARY KEY (id));
@@ -19,8 +19,8 @@ CREATE TABLE IF NOT EXISTS coalyard.beverages(
 CREATE TABLE IF NOT EXISTS coalyard.food(
   	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   	name VARCHAR(45) NOT NULL,
-  	description VARCHAR(45) NOT NULL,
-  	food_type VARCHAR(15) NOT NULL,
+  	description VARCHAR(200) NOT NULL,
+  	food_type VARCHAR(45) NOT NULL,
  	price INT NOT NULL,
 	PRIMARY KEY (id));
 	
@@ -84,6 +84,8 @@ CREATE TABLE IF NOT EXISTS coalyard.artist_image(
 CREATE TABLE IF NOT EXISTS coalyard.art_work(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	artists_id INT UNSIGNED NOT NULL,
+	price INT NOT NULL,
+	description VARCHAR(200),
 	content_type VARCHAR(45) NOT NULL,
 	image BLOB NOT NULL,
 	PRIMARY KEY(id));
