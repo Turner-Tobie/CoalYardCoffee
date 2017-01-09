@@ -1,5 +1,9 @@
 package co.coalyard.repositories;
 
-public class BandRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import co.coalyard.beans.Band;
+
+public interface BandRepository extends CrudRepository<Band, Long>{
 
 }

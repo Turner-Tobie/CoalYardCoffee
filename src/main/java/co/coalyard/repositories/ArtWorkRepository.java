@@ -1,5 +1,9 @@
 package co.coalyard.repositories;
 
-public class ArtWorkRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import co.coalyard.beans.ArtWork;
+
+public interface ArtWorkRepository extends CrudRepository<ArtWork, Long>{
 
 }

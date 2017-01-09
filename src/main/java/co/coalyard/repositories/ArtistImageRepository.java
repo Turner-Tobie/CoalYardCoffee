@@ -1,5 +1,9 @@
 package co.coalyard.repositories;
 
-public class ArtistImageRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import co.coalyard.beans.ArtistImage;
+
+public interface ArtistImageRepository extends CrudRepository<ArtistImage, Long>{
 
 }

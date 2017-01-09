@@ -1,5 +1,9 @@
 package co.coalyard.repositories;
 
-public class EmployeesRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import co.coalyard.beans.Employees;
+
+public interface EmployeesRepository extends CrudRepository<Employees, Long>{
 
 }
