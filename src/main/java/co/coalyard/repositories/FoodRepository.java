@@ -1,5 +1,9 @@
 package co.coalyard.repositories;
 
-public class FoodRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import co.coalyard.beans.Food;
+
+public interface FoodRepository extends CrudRepository<Food, Long>{
 
 }

@@ -1,5 +1,9 @@
 package co.coalyard.repositories;
 
-public class BeveragesImagesRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import co.coalyard.beans.BeveragesImages;
+
+public interface BeveragesImagesRepository extends CrudRepository<BeveragesImages, Long>{
 
 }
