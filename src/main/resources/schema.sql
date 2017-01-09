@@ -1,37 +1,37 @@
-CREATE SCHEMA IF NOT EXISTS coalyard;
-USE coalyard;
 
-CREATE TABLE IF NOT EXISTS coalyard.beverages(
+USE heroku_3de001f3cbaa678;
+
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.beverages(
   	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   	name VARCHAR(45) NOT NULL,
-  	description VARCHAR(45) NOT NULL,
+  	description VARCHAR(200) NOT NULL,
   	beverage_type VARCHAR(15) NOT NULL,
   	price INT NOT NULL,
   	PRIMARY KEY (id));
   	
-  CREATE TABLE IF NOT EXISTS coalyard.beverages_images(
+  CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.beverages_images(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	beverages_id INT UNSIGNED NOT NULL,
 	content_type VARCHAR(45) NOT NULL,
 	image BLOB NOT NULL,
 	PRIMARY KEY(id));
 
-CREATE TABLE IF NOT EXISTS coalyard.food(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.food(
   	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   	name VARCHAR(45) NOT NULL,
-  	description VARCHAR(45) NOT NULL,
-  	food_type VARCHAR(15) NOT NULL,
+  	description VARCHAR(200) NOT NULL,
+  	food_type VARCHAR(45) NOT NULL,
  	price INT NOT NULL,
 	PRIMARY KEY (id));
 	
-CREATE TABLE IF NOT EXISTS coalyard.food_images(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.food_images(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	food_id INT UNSIGNED NOT NULL,
 	content_type VARCHAR(45) NOT NULL,
 	image BLOB NOT NULL,
 	PRIMARY KEY(id));
 
-CREATE TABLE IF NOT EXISTS coalyard.employees(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.employees(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	first_name VARCHAR (45) NOT NULL,
 	last_name VARCHAR (45) NOT NULL,
@@ -39,14 +39,14 @@ CREATE TABLE IF NOT EXISTS coalyard.employees(
 	bio VARCHAR (1000) NOT NULL,
 	PRIMARY KEY (id));
 
-CREATE TABLE IF NOT EXISTS coalyard.employees_image(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.employees_image(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	employees_id INT UNSIGNED NOT NULL,
 	content_type VARCHAR(45) NOT NULL,
     image BLOB NOT NULL,
     PRIMARY KEY (id));
 
-CREATE TABLE IF NOT EXISTS coalyard.band(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.band(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	name VARCHAR(100) NOT NULL,
 	musicians VARCHAR(45) NOT NULL,
@@ -54,14 +54,14 @@ CREATE TABLE IF NOT EXISTS coalyard.band(
 	description VARCHAR(200) NOT NULL,	
 	PRIMARY KEY(id));
 	
-CREATE TABLE IF NOT EXISTS coalyard.band_images(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.band_images(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	band_id INT UNSIGNED NOT NULL,
 	content_type VARCHAR(45) NOT NULL,
 	image BLOB NOT NULL,
 	PRIMARY KEY(id));
 
-CREATE TABLE IF NOT EXISTS coalyard.artists(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.artists(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	first_name VARCHAR(45) NOT NULL,
 	last_name VARCHAR(45) NOT NULL,
@@ -74,17 +74,18 @@ CREATE TABLE IF NOT EXISTS coalyard.artists(
 	description VARCHAR(200) NOT NULL,
 	PRIMARY KEY(id));
 	
-CREATE TABLE IF NOT EXISTS coalyard.artist_image(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.artist_image(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	artists_id INT UNSIGNED NOT NULL,
 	content_type VARCHAR(45) NOT NULL,
 	image BLOB NOT NULL,
 	PRIMARY KEY(id));
 	
-CREATE TABLE IF NOT EXISTS coalyard.art_work(
+CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.art_work(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	artists_id INT UNSIGNED NOT NULL,
+	price INT NOT NULL,
+	description VARCHAR(200),
 	content_type VARCHAR(45) NOT NULL,
 	image BLOB NOT NULL,
 	PRIMARY KEY(id));
-)
