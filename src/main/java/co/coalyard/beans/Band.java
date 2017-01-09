@@ -2,10 +2,12 @@ package co.coalyard.beans;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -18,12 +20,13 @@ public class Band {
 	
 	private String name;
 	
-	private List <String> musicians;
+	private String musicians;
 	
 	private String bio;
 	
 	private String description;
-
+	
+	@OneToMany(mappedBy="band", cascade = CascadeType.ALL)
 	private List <BandImages> bandImages;
 	
 	@Override
@@ -70,11 +73,13 @@ public class Band {
 		this.name = name;
 	}
 
-	public List<String> getMusicians() {
+	
+
+	public String getMusicians() {
 		return musicians;
 	}
 
-	public void setMusicians(List<String> musicians) {
+	public void setMusicians(String musicians) {
 		this.musicians = musicians;
 	}
 

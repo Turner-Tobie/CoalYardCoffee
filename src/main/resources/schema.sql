@@ -1,4 +1,4 @@
-CREATE SCHEMA IF NOT EXISTS coalyard;
+
 USE heroku_3de001f3cbaa678;
 
 CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.beverages(
@@ -89,4 +89,3 @@ CREATE TABLE IF NOT EXISTS heroku_3de001f3cbaa678.art_work(
 	content_type VARCHAR(45) NOT NULL,
 	image BLOB NOT NULL,
 	PRIMARY KEY(id));
-)
