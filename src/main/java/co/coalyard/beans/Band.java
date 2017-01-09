@@ -23,6 +23,8 @@ public class Band {
 	private String bio;
 	
 	private String description;
+
+	private List <BandImages> bandImages;
 	
 	@Override
 	public int hashCode() {
@@ -49,7 +51,7 @@ public class Band {
 	@Override
 	public String toString() {
 		return "Band [id=" + id + ", name=" + name + ", musicians=" + musicians + ", bio=" + bio + ", description="
-				+ description + "]";
+				+ description + ", bandImages=" + bandImages + "]";
 	}
 
 	public long getId() {
@@ -91,6 +93,15 @@ public class Band {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	public List<BandImages> getBandImages() {
+		return bandImages;
+	}
+
+	public void setBandImages(List<BandImages> bandImages) {
+		this.bandImages = bandImages;
+	}
+	
 	
 	
 }
