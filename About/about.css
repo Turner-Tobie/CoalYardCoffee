@@ -28,7 +28,6 @@ background-size: cover;
 	font-family: 'Playfair Display', serif;
 	text-align: center;
   visibility: hidden;
-
 }
 
 /*About*/
@@ -52,15 +51,14 @@ position: relative;
 }
 
 .headText{
-	font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display', serif;
   font-size: 45px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 20px 0px 300px 0px;
   float: left;
   clear: none;
-      -webkit-font-smoothing: antialiased;
-
+-webkit-font-smoothing: antialiased;
 }
 
 .bodyText{
@@ -74,18 +72,44 @@ position: relative;
       -webkit-font-smoothing: antialiased;
 } 
 
-/*#abtTitle{
-  position: relative;
-  width: 25%;
+p {
+    font-family: 'Fauna One', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*Photo seperator*/
+
+#imgseperator {
+position: relative;
+  width: 100%;
   min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('indiana.png');
+  background-image: url('img/coalyard1.jpg');
   text-align: center;
-*/
+  color: white;
+/*parralax scrolling*/
+height: 100%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.seperatorTxt{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	color: black;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+  visibility: hidden;
+}
+
 
 /*Employees*/
 
@@ -100,6 +124,7 @@ position: relative;
   -o-background-size: cover;
   background-position: center;
   position: relative;
+    padding-bottom: 20px;
 }
 
 #employeesTxt{
@@ -107,13 +132,10 @@ position: relative;
   font-family: 'Playfair Display', serif;
   padding-top: 10px;
   padding-bottom: 0px;
-  padding-left: 125px;
-  padding-right: 300px;
-  clear: left;
   font-size: 45px;
-  float: left;
-  clear: none;
+  padding-left: 120px;
   -webkit-font-smoothing: antialiased;
+
 }
 
 /*Employee Images*/
@@ -122,103 +144,147 @@ position: relative;
   background-color: #e3ccac;
   display: inline-block;
   height: 100%;
-  margin-right: -40px -10px -40px -10px;
+  margin-right: 0;
+    display: inline-block;
+    justify-content: center;
+     display: flex;
+  align-items: center;
+    padding-bottom: 10px;
 
   }
 
 .hovereffect {
-  width: 100%;
-  height: 100%;
-/*    float: left;*/
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
-    display: inline-block;
+width: 100%;
+height: 100%;
+max-height: 600px;
+max-width: 600px;
+overflow: hidden;
+position: relative;
+text-align: center;
+cursor: default;
+display: inline-block;
+justify-content: center;
+display: flex;
+align-items: center;
 }
 
 .hovereffect .overlay {
-    width: 78%;
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-  top: auto;
-  bottom: 0;
-  padding: 1em;
-  height: 4.75em;
-  background: #788269;
-  color: white;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
+width: 77.2%;
+position: absolute;
+overflow: hidden;
+top: auto;
+bottom: 0;
+padding: 1em;
+height: 4.75em;
+background: #744821;
+color: white;
+-webkit-transition: -webkit-transform 0.35s;
+transition: transform 0.35s;
+-webkit-transform: translate3d(0,100%,0);
+transform: translate3d(0,100%,0);
+
+
+  
 }
 
 .hovereffect img {
     display: block;
     position: relative;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    width: 400px;
+    height: 350px;    
+}
+
+#image1{
+width: 350px;
+height: 400px;
+background-size:cover; 
+background-position:center center; 
+background-repeat:no-repeat; 
+background-image:url('img/coffeeperson1.jpg');
+}
+
+#image2{
+width: 350px;
+height: 400px;
+background-size:cover; 
+background-position:center center; 
+background-repeat:no-repeat; 
+background-image:url('img/coffeeperson2.jpg');
+}
+
+#image3{
+width: 350px;
+height: 400px;
+background-size:cover; 
+background-position:center center; 
+background-repeat:no-repeat; 
+background-image:url('img/coffeeperson3.jpg');
 }
 
 .hovereffect:hover img {
--webkit-transform: translate3d(0,-10%,0);
-  transform: translate3d(0,-10%,0);
+    -webkit-transform: translate3d(0,-10%,0);
+    transform: translate3d(0,-10%,0);
 }
 
 .hovereffect h2 {
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
+    font-family: 'Playfair Display', serif;
+  font-size: 15px;
     color: #fff;
     text-align: center;
     position: relative;
     font-size: 17px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);
-  float: left;
-  margin: 0px;
-  display: inline-block;
+    float: left;
+    margin: 0px;
+    display: inline-block;
 }
 
 .hovereffect a.info {
+    font-family: 'Fauna One', serif;
+    -webkit-font-smoothing: antialiased;
     display: inline-block;
     text-decoration: none;
-    padding: 7px 14px;
-    text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
-  margin: 50px 0 0 0;
-  background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
 }
+
 .hovereffect a.info:hover {
     box-shadow: 0 0 5px #fff;
 }
 
 
 .hovereffect p.icon-links a {
-  float: right;
-  color: #3c4a50;
-  font-size: 1.4em;
+    float: right;
+    color: #3c4a50;
+    font-size: 1.4em;
 }
 
 .hovereffect:hover p.icon-links a:hover,
 .hovereffect:hover p.icon-links a:focus {
-  color: #252d31;
+    color: #252d31;
+    
 }
 
 .hovereffect h2,
 .hovereffect p.icon-links a {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,200%,0);
-  transform: translate3d(0,200%,0);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
 }
 
 .hovereffect p.icon-links a span:before {
-  display: inline-block;
-  padding: 8px 10px;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    padding: 8px 10px;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -249,4 +315,58 @@ position: relative;
   transition-delay: 0.2s;
 }
 
+/*Footer*/
 
+#footer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #744821;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-top: 2px solid #744821;
+}
+
+.footerHead{
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.footerBody{
+    font-family: 'Fauna One', serif;
+    padding-bottom: 20px; 
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+    color: #744821;
+}
+
+/* unvisited link */
+a:link {
+    color: #744821;
+}
+
+/* visited link */
+a:visited {
+    color: #744821;
+}
+
+/* mouse over link */
+a:hover {
+    color: #e3ccac;
+}
+
+/* selected link */
+a:active {
+    color: #e3ccac;
+}
