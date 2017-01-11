@@ -7,7 +7,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('img/coffeebgabt.jpg');
+  background-image: url('img/coffeeheader.jpg');
   text-align: center;
   color: white;
 
@@ -43,6 +43,16 @@ background-size: cover;
 -o-background-size: cover;
 background-position: center;
 position: relative;
+    
+position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('img/paperbw4.jpg');
 
 }
 
@@ -88,7 +98,7 @@ position: relative;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('img/coalyard1.jpg');
+  background-image: url('img/coffeeshop2.jpg');
   text-align: center;
   color: white;
 /*parralax scrolling*/
@@ -332,6 +342,17 @@ background-image:url('img/coffeeperson3.jpg');
     padding-top: 10px;
     padding-bottom: 40px;
     border-top: 2px solid #744821;
+    
+ position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('img/paperbw4.jpg');
+
 }
 
 .footerHead{
