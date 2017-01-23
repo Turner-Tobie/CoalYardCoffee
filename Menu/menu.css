@@ -1,0 +1,126 @@
+
+
+body{
+    background-color: #a9aa88;
+}
+
+.col-md-3{
+   margin: 10px; 
+}
+
+header{
+    background-color: #788269;
+}
+
+#menu{
+    background-image: url('../img/paperbw3copy.png');
+      position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+    padding-right: 250px;
+    padding-left: 250px;
+    padding-bottom: 30px;
+
+}
+
+#img1 {
+  position: relative;
+  width: 20%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/coffeewhippedcream.jpg');
+  text-align: center;
+    width: 270px;
+    height: 250px;
+}
+
+#img2 {
+  position: relative;
+  width: 20%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/teajars2.jpg');
+  text-align: center;
+    width: 270px;
+    height: 250px;
+}
+    
+#img3 {
+  position: relative;
+  width: 20%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/coffeepress.jpg');
+  text-align: center;
+    width: 270px;
+    height: 250px;
+}
+
+#img4 {
+  position: relative;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/pastries.jpg');
+  text-align: center;
+    width: 270px;
+    height: 250px;
+}
+
+.menuHeading{
+    font-family: 'Playfair Display';
+      -webkit-font-smoothing: antialiased;
+    color: #744821;
+    text-decoration: underline;
+}
+
+.menuItems{
+    display: block;
+     margin: 0px;
+    padding: 0px;
+    
+}
+.itemName{
+    font-family: 'Fauna One';
+      -webkit-font-smoothing: antialiased;
+    color: #744821;
+    display: inline-block;
+     margin: 0px;
+    padding: 0px;
+}
+
+.itemPrice{
+    font-family: 'Fauna One';
+      -webkit-font-smoothing: antialiased;
+    color: #744821;
+    float: right;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.divArrow{
+    float: left;
+    display: ;
+}

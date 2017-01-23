@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html style="background-color:#788269">
+<head>
+<!--CSS Link-->
+	<link rel="stylesheet" type="text/css" href="main.css">
+    
+<!--    Bootstrap CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+<!--    JQuery and Javascript-->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    
+	<title>Coal Yard Coffee</title>
+</head>
+<body style="margin-top:0; margin-left:0">
+<div style="position:relavtive">
+	<img class="video-overlay" style="width:150px; height:150px; left: 42.5%; position:absolute; opacity: .7 " src="assets/coalyardlogowhite.png">
+	<p class="video-overlay" style="font-family:raleway; font-size:48px; color:#ffffff; text-align:center; position:absolute; font-weight:200; left:30%; bottom: 35%; opacity: .9 ">COAL YARD COFFEE</p>
+
+	<p class="video-overlay underline" style="font-family:raleway; font-size:18px; color:#ffffff; text-align:left; position:absolute; font-weight:200; left:27.5%; top: 8%">ABOUT<a href="#"></a></p>
+	<p class="video-overlay underline" style="font-family:raleway; font-size:18px; color:#ffffff; text-align:left; position:absolute; font-weight:200; left:35%; top: 8%">GALLERY<a href="#"></a></p>
+	<p class="video-overlay underline" style="font-family:raleway; font-size:18px; color:#ffffff; text-align:right; position:absolute; font-weight:200; right:25%; top: 8%">CHARITY<a href="#"></a></p>
+	<p class="video-overlay underline" style="font-family:raleway; font-size:18px; color:#ffffff; text-align:right; position:absolute; font-weight:200; right:35%; top: 8%">EVENTS<a href="#"></a></p>
+	<main style="height: 1280px; width:100%">
+   		<video style="display: inline" class="bv-video" style="position:fixed"></video>
+	</main>
+</div>	
+<div class="mission-statement" style="background-color:#c6975f">
+	
+</div>
+<script src="backgroundVideo.js"></script>
+<script>
+	  const backgroundVideo = new BackgroundVideo('.bv-video', {
+      src: [
+        'assets/tobie.mp4'
+      ],
+      onReady: function () {
+        // Use onReady() to prevent flickers or force loading state
+        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
+        vidParent.classList.add('bv-video-wrap--ready');
+      }
+    });
+</script>
+    
+<!--
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <p>Hodor. Hodor hodor - hodor hodor HODOR hodor, hodor hodor?! Hodor, hodor... Hodor hodor hodor; hodor hodor hodor hodor! Hodor hodor; hodor hodor... Hodor hodor hodor hodor hodor hodor! Hodor! Hodor hodor, hodor hodor HODOR hodor, hodor hodor hodor hodor, hodor. Hodor hodor?! Hodor hodor... Hodor hodor hodor hodor hodor? Hodor. Hodor hodor hodor hodor hodor hodor. Hodor. </p>
+        </div>
+    </div>
+</div>
+-->
+</body>
+</html>
